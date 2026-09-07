@@ -786,6 +786,12 @@ const uniV3Configs = {
       blacklistedTokens: [],
     },
   },
+  'kittypunch-kona-v3': {
+    abstract: {
+      factory: '0xfeD3612D6865ca46F080f19fc34AA8Cac0C92cF6',
+      fromBlock: 64955000,
+    },
+  },
   'kodiak-v3': {
     berachain: {
       factory: '0xD84CBf0B02636E7f53dB9E5e45A616E05d710990',
@@ -1191,11 +1197,6 @@ const uniV3Configs = {
     redstone: {
       factory: '0xece75613Aa9b1680f0421E5B2eF376DF68aa83Bb',
       fromBlock: 1,
-    },
-    ink: {
-      factory: '0x640887A9ba3A9C53Ed27D0F7e8246A4F933f3424',
-      fromBlock: 1,
-      blacklistedTokens: [ADDRESSES.ethereum.WETH],
     },
   },
   'retro': {
@@ -1808,7 +1809,11 @@ const uniV3Configs = {
       fromBlock: 4904397,
       isAlgebra: true,
     },
-  }
+  },
+  'helios-v3': {
+    start: '2026-05-31',
+    rise: { factory: '0xbF30bD8567628Dc4E120b7536d051EaFaA3fD0fa', fromBlock: 12557099 },
+  },
 }
 
 module.exports = buildProtocolExports(uniV3Configs, uniV3Export)
